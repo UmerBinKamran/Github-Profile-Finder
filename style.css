@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #020617, #020617);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app {
+  width: 420px;
+  background: #020617;
+  color: #fff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.search-box {
+  display: flex;
+  gap: 10px;
+}
+
+.search-box input {
+  flex: 1;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+
+.search-box button {
+  padding: 12px 16px;
+  border: none;
+  border-radius: 8px;
+  background: #3b82f6;
+  color: white;
+  cursor: pointer;
+}
+
+.search-box button:hover {
+  background: #2563eb;
+}
+
+#profile {
+  margin-top: 25px;
+}
+
+.profile-card {
+  text-align: center;
+}
+
+.profile-card img {
+  width: 110px;
+  border-radius: 50%;
+  border: 4px solid #3b82f6;
+}
+
+.profile-card h2 {
+  margin-top: 10px;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  margin: 15px 0;
+}
+
+.stat {
+  text-align: center;
+}
+
+.stat span {
+  display: block;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.repos {
+  margin-top: 15px;
+}
+
+.repo {
+  background: #020617;
+  border: 1px solid #1e293b;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+
+.repo a {
+  color: #3b82f6;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.error {
+  color: #ef4444;
+  text-align: center;
+}
