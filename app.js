@@ -12,7 +12,6 @@ function getProfile() {
     return;
   }
 
-  // Fetch user profile
   fetch(`https://api.github.com/users/${username}`)
     .then((response) => {
       if (!response.ok) {
@@ -21,17 +20,14 @@ function getProfile() {
       return response.json();
     })
     .then((user) => {
-      // Fetch recent repos
       fetch(`${user.repos_url}?sort=updated&per_page=5`)
         .then((res) => res.json())
         .then((repos) => {
-          // Calculate stars
           let stars = 0;
           repos.forEach((repo) => {
             stars += repo.stargazers_count;
           });
 
-          // Display profile
           profileDiv.innerHTML = `
             <div class="profile-card">
               <img src="${user.avatar_url}" alt="${user.login}">
